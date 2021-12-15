@@ -1,0 +1,108 @@
+.footer {
+  background: $gray-bg-color;
+  padding: 60px 0;
+}
+.footer > .container {
+  display: flex;
+}
+.footer__left {
+  margin-right: 70px;
+}
+.footer__logo {
+  color: $accent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.footer__logotip {
+  color: #ffffff;
+}
+.footer__address {
+  margin-top: 20px;
+  color: $primary-white-color;
+}
+.footer__item {
+  margin-top: 20px;
+  color: $primary-white-color;
+  @extend %footer-text;
+}
+.footer__link {
+  color: $footer-text-color;
+  color: rgba(255, 255, 255, 0.6);
+  @extend %footer-text;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__info {
+  margin-top: 9px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__text {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+.footer-social {
+  margin-right: auto;
+}
+.socail-list__icon {
+  @extend %icons;
+}
+.social-list__footer {
+  @extend %flex-just;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.js-speaker-form input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  @include bordered(rgba(255, 255, 255, 0.3));
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-subscribe {
+  display: inline-flex;
+}
+.button-subscribe__icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 2px;
+}

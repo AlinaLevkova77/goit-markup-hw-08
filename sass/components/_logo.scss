@@ -1,0 +1,15 @@
+.logo {
+  @media screen and(min-width:767px) {
+    margin-right: 88px;
+    margin-left: 15px;
+  }
+  margin-right: 93px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: $accent-color;
+
+  &__text {
+    color: $title-text-color;
+  }
+}

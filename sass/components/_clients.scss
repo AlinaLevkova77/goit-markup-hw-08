@@ -1,0 +1,69 @@
+.social-list {
+  @extend %flex-just;
+}
+.social-list__item {
+  margin-right: 10px;
+}
+.social-list__link {
+  @extend %flex-just;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $icon-grey-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+.social-list__icon {
+  @extend %icons;
+  fill: currentColor;
+}
+
+.clients-sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-sections__title {
+  text-align: center;
+  margin: 0 0 50px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.clients-sections__list {
+  @extend %flex-just;
+}
+.clients-sections__list > .clients-sections__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-sections__link {
+  @extend %flex-just;
+  width: 170px;
+  height: 92px;
+  @include bordered($icon-grey-color);
+  border-radius: 4px;
+  fill: $icon-grey-color;
+  transition: fill 250ms $timing-function, border 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    @include bordered(#2196f3);
+  }
+}
+.clients-sections__link:hover .clients-sections__icon,
+.clients-sections__link:focus .clients-sections__icon {
+  fill: #2196f3;
+}
+
+.clients-sections__icon {
+  width: 106px;
+  height: 60px;
+  color: currentColor;
+}
