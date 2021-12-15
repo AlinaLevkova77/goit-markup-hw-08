@@ -18,11 +18,7 @@
     justify-content: center;
   }
 }
-// .team-sections__list:not(:last-child) {
-//   @media screen and (max-width: 768px) {
-//     margin-bottom: 30px;
-//   }
-// }
+
 @media screen and (max-width: 768px) {
   .team-sections__list .team-sections__box:not(:last-child) {
     margin-bottom: 30px;
