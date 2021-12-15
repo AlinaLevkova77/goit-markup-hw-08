@@ -3,10 +3,19 @@
   padding: 60px 0;
 }
 .footer > .container {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer__left {
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 480px) {
+    margin-right: 70px;
+  }
 }
 .footer__logo {
   color: $accent-color;

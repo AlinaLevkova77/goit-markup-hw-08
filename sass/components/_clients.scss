@@ -37,16 +37,58 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.clients-sections__list {
-  @extend %flex-just;
+
+// .clients-sections__list > .clients-sections__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+.clients-sections__item {
+  width: 100%;
+  height: 92px;
 }
-.clients-sections__list > .clients-sections__item:not(:last-child) {
-  margin-right: 30px;
+.clients-sections__list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+.clients-sections__list > .clients-sections__item {
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 .clients-sections__link {
   @extend %flex-just;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   @include bordered($icon-grey-color);
   border-radius: 4px;
   fill: $icon-grey-color;
