@@ -1,5 +1,8 @@
 .features-sections {
   padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .features-sections__title {
   font-weight: 700;
