@@ -2,12 +2,29 @@
   padding: 94px 0;
 }
 .product__type {
-  @extend %flex-just;
-  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
+.product__type {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+}
 .product__type .product__item:not(:last-child) {
   margin-right: 8px;
+}
+.product__item:not(:last-child) {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 15px;
+  }
 }
 .portfolio__btn {
   @extend %btn;
@@ -16,6 +33,7 @@
   border: 0;
   background-color: #f5f4fa;
   color: $primary-black-color;
+  margin-bottom: auto;
 
   &:focus,
   &:hover,
