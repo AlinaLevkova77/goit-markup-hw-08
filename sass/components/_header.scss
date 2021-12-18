@@ -12,12 +12,32 @@
   }
 }
 .navigation {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
 }
 
+.navigation__menu-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.navigation__menu-button .icon-cross {
+  display: none;
+}
+.navigation__menu-button .is-open .icon-cross {
+  display: block;
+}
+.navigation__menu-button .is-open .icon-cross {
+  display: none;
+}
 .site-nav__item:last-child {
   scroll-margin-left: 0px;
 }

@@ -1,6 +1,7 @@
 .footer {
   background: $gray-bg-color;
   padding: 60px 0;
+  list-style: none;
 }
 .footer {
   @media screen and (max-width: 1199px) {
@@ -9,19 +10,13 @@
 }
 .footer > .container {
   @media screen and (min-width: 1200px) {
-    display: flex;
+    display: -webkit-box;
   }
 }
 .footer__left {
   @media screen and (max-width: 767px) {
     text-align: center;
     margin-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: auto;
   }
 }
 .footer__logo {
@@ -76,14 +71,30 @@
   color: $primary-white-color;
 }
 .footer-social {
-  margin-right: auto;
   @media screen and (max-width: 767px) {
     text-align: center;
     margin-bottom: 60px;
   }
-  margin-right: auto;
   @media screen and (min-width: 768px) {
     display: inline-block;
+    margin-left: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+.adress-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0 70px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding: 0 15px;
   }
 }
 .socail-list__icon {
@@ -106,18 +117,23 @@
 .js-speaker-form {
   @media screen and (max-width: 1199px) {
     margin-top: 60px;
-    // display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
 .js-speaker-form input {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 1200px) {
-    width: 100%px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
-  width: 358px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
@@ -130,17 +146,9 @@
   color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.adress-box {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    padding: 0 70px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
+
+.js-speaker-form input:focus {
+  border: 1px solid #2196f3;
 }
 .footer-email {
   @media screen and (max-width: 1199px) {
