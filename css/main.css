@@ -297,7 +297,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -481,12 +481,37 @@ textarea, .site-nav__link, .button-primary,
   }
 }
 
-.navigation__menu-button .is-open .icon-cross {
+.navigation__menu-button.icon-cross {
   display: none;
 }
 
-.navigation__menu-button .is-open .icon-cross {
+.navigation__menu-button.is-open.icon-cross {
   display: block;
+}
+
+.navigation__menu-button .is-open .icon-menu {
+  display: none;
+}
+
+.navigation__menu-button {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
 .menu-container {
@@ -496,6 +521,7 @@ textarea, .site-nav__link, .button-primary,
   width: 100vw;
   height: 100vh;
   padding: 32px;
+  background-color: blue;
   pointer-events: none;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -509,7 +535,7 @@ textarea, .site-nav__link, .button-primary,
           transform: translateX(0);
 }
 
-.mobile-button__closed {
+.menu-container .navigation__menu-button {
   position: absolute;
 }
 
@@ -1584,14 +1610,33 @@ textarea, .site-nav__link, .button-primary,
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
   background: #ffffff;
   padding: 40px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   opacity: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .button__close {
@@ -1627,6 +1672,12 @@ textarea, .site-nav__link, .button-primary,
   letter-spacing: 00.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__text {
+    line-height: 1.5;
+  }
 }
 
 .modal__group {
@@ -1739,7 +1790,7 @@ textarea, .site-nav__link, .button-primary,
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal__item {
     font-size: 12px;
     line-height: 1.17;

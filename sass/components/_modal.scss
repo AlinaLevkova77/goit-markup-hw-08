@@ -15,17 +15,23 @@
 }
 /*******************Modal********************/
 .modal {
-  // @media screen and (max-width: 767px) {
-  //   min-width: 450px;
-  //   min-height: 609px;
-  // }
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
   position: fixed;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
   background: $primary-white-color;
 
   padding: 40px;
@@ -38,7 +44,6 @@
 .button__close {
   position: absolute;
   @extend %flex-just;
-
   min-width: 30px;
   min-height: 30px;
   margin-left: auto;
@@ -68,6 +73,9 @@
 }
 
 .modal__text {
+  @media screen and (max-width: 1199px) {
+    line-height: 1.5;
+  }
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -163,7 +171,7 @@
   height: 24px;
 }
 .modal__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;
   }
