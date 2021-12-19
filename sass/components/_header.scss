@@ -29,15 +29,32 @@
   background-color: transparent;
 }
 
-.navigation__menu-button .icon-cross {
+.navigation__menu-button .is-open .icon-cross {
   display: none;
 }
 .navigation__menu-button .is-open .icon-cross {
   display: block;
 }
-.navigation__menu-button .is-open .icon-cross {
-  display: none;
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  // background-color: blue;
+  pointer-events: none;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: 250 ms ease-in-out;
 }
+.menu-container .is-open {
+  transform: translateX(0);
+}
+.mobile-button__closed {
+  position: absolute;
+}
+
 .site-nav__item:last-child {
   scroll-margin-left: 0px;
 }

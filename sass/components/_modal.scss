@@ -15,6 +15,10 @@
 }
 /*******************Modal********************/
 .modal {
+  // @media screen and (max-width: 767px) {
+  //   min-width: 450px;
+  //   min-height: 609px;
+  // }
   position: fixed;
   text-align: center;
   top: 50%;
@@ -159,6 +163,10 @@
   height: 24px;
 }
 .modal__item {
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
