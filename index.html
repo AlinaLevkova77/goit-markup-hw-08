@@ -31,21 +31,40 @@
                 height="40" 
                 aria-label="Переключатель мобильного меню" 
                 >
-                
-                
                 <use сlass="icon-menu" href="./images/icons.svg#menu"></use>
                 </svg>
                 </button>
-                <ul class="mobile-menu">
-                    <li><a href="" class="link">О нас</a></li>
-                    <li><a href="" class="link">Работы</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
-                    <li><a href="" class="link">Карьера</a></li>
-                </ul>
+                
                 <div class="menu-container js-menu-container" id="mobile-menu">
                     <button class="navigation__menu-button  mobile-button__closed  js-close-menu"></button>
-                <use сlass="icon-cross" href="./images/icons.svg#cross"></use>
-                </div>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use сlass="icon-cross" href="./images/icons.svg#cross"></use>
+                </svg>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link mobile-menu__link--current">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+                <div>
+                    <ul class="mobile-menu__contacts">
+                        <li><a href="tel:+380961111111" class="mobile-menu__tel">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li><a href="info@devstudio.com" class="mobile-menu__mail">
+                                </svg>
+                                info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Instagram</a></li>
+                        <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Linkedin</a>
+                        </li>
+                    </ul>
+            </div>
             
              <ul class="site-nav">
                  <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
@@ -174,9 +193,14 @@
            <h2 class="team-sections__title">Наша команда</h2>
            <ul class="team-sections__list">
                <li class="team-sections__box">
-                 <img src="./images/portrait1.jpg"
+                   <picture>
+                       <source srcset=""
+                 <img 
+                 srcset="./images/igor-480.jpg 480w,/images/igor-4802x.jpg 2x" width=100% 
+                 src="./images/igor-480.jpg"
                  alt="Игорь Демьяненко"
                  width="270">
+                </picture>
              <div class="team-desc">
                 <h3 class="team-desc__item">Игорь Демьяненко</h3>
                 <p class="team-desc__text">Product Designer</p>
