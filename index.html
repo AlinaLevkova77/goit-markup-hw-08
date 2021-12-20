@@ -99,7 +99,7 @@
          <!-- Герой -->
 
          <section class="hero">
-             <div class="container"> 
+             <div class="container "> 
              <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
              
            
@@ -194,12 +194,16 @@
            <ul class="team-sections__list">
                <li class="team-sections__box">
                    <picture>
-                       <source srcset=""
-                 <img 
-                 srcset="./images/igor-480.jpg 480w,/images/igor-4802x.jpg 2x" width=100% 
-                 src="./images/igor-480.jpg"
-                 alt="Игорь Демьяненко"
-                 width="270">
+                       <source srcset="
+                       ./images/igor-mob.jpg 1x, 
+                       ./images/igor-mob2x.jpg 2x
+                       ./images/igor-tablet.jpg 1x,
+                       ./images/igor-tablet2x.jpg 2x
+                       ./images/igor-desctop.jpg 1x,
+                       ./images/igor-desctop2x.jpg 2x" />                    
+                      <img src="./images/igor-mob.jpg" 
+                      alt="Игорь Демьяненко"
+                      width="100%">
                 </picture>
              <div class="team-desc">
                 <h3 class="team-desc__item">Игорь Демьяненко</h3>
@@ -238,9 +242,19 @@
             
             </li>
                <li class="team-sections__box">
-                         <img src="./images/portrait2.jpg"
-                    alt="Ольга Репина"
-                    width="270">
+                <picture>
+                          <source srcset="
+                                       ./images/olga-mob.jpg 1x, 
+                                       ./images/olga-mob2x.jpg 2x
+                                       ./images/olga-tablet.jpg 1x,
+                                       ./images/olga-tablet2x.jpg 2x
+                                       ./images/olga-desctop.jpg 1x,
+                                       ./images/olga-desctop2x.jpg 2x" />
+                           <img src="./images/olga-mob.jpg" 
+                           alt="Ольга Репина"
+                            width="100%">
+                </picture>
+                
              <div class="team-desc">
                 <h3 class="team-desc__item">Ольга Репина</h3>
                 <p class="team-desc__text">Frontend Developer</p>
