@@ -40,6 +40,7 @@
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use сlass="icon-cross" href="./images/icons.svg#cross"></use>
                 </svg>
+                
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link mobile-menu__link--current">Студия</a>
                     </li>
@@ -64,6 +65,7 @@
                         <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Linkedin</a>
                         </li>
                     </ul>
+            </div>
             </div>
             
              <ul class="site-nav">
@@ -248,8 +250,8 @@
                                        ./images/olga-mob2x.jpg 2x
                                        ./images/olga-tablet.jpg 1x,
                                        ./images/olga-tablet2x.jpg 2x
-                                       ./images/olga-desctop.jpg 1x,
-                                       ./images/olga-desctop2x.jpg 2x" />
+                                       ./images/olga-desktop.jpg 1x,
+                                       ./images/olga-desktop2x.jpg 2x" />
                            <img src="./images/olga-mob.jpg" 
                            alt="Ольга Репина"
                             width="100%">
@@ -291,9 +293,17 @@
              </div>
             </li>
                <li class="team-sections__box">
-                   <img src="./images/portrait3.jpg"
-                    alt="Николай Тарасов"
-                    width="270">
+                    <picture>
+                        <source srcset="
+                         ./images/kolya-mob.jpg 1x, 
+                         ./images/kolya-mob2x.jpg 2x
+                         ./images/kolya-tablet.jpg 1x,
+                         ./images/kolya-tablet2x.jpg 2x
+                         ./images/kolya-desktop.jpg 1x,
+                         ./images/kolya-desktop2x.jpg 2x" />
+                        <img src="./images/kolya-mob.jpg" alt="Николай Тарасов" width="100%">
+                    </picture>
+                   
              <div class="team-desc">
                 <h3 class="team-desc__item">Николай Тарасов</h3>
                 <p class="team-desc__text">Marketing</p>
@@ -330,9 +340,17 @@
              </div>
                </li>
                <li class="team-sections__box">
-                   <img src="./images/portrait4.jpg"
-                    alt="Михаил Ермаков"
-                    width="270">
+                <picture>
+                    <source srcset="
+                     ./images/misha-mob.jpg 1x, 
+                     ./images/misha-mob2x.jpg 2x
+                     ./images/misha-tablet.jpg 1x,
+                     ./images/misha-tablet2x.jpg 2x
+                     ./images/misha-desktop.jpg 1x,
+                     ./images/misha-desktop2x.jpg 2x" />
+                    <img src="./images/misha-mob.jpg" alt="Михаил Ермаков" width="100%">
+                </picture>
+                  
              <div class="team-desc">
                 <h3 class="team-desc__item">Михаил Ермаков</h3>
                 <p class="team-desc__text">UI Designer</p>
