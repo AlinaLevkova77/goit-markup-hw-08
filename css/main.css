@@ -572,6 +572,7 @@ textarea, .site-nav__link, .button-primary,
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 480px) {
@@ -598,6 +599,11 @@ textarea, .site-nav__link, .button-primary,
   .mobile-menu__list .mobile-menu__link .menu {
     display: none;
   }
+}
+
+.icon-cross {
+  left: 0;
+  bottom: 0;
 }
 
 .mobile-menu__link {
