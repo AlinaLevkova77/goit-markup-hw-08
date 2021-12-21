@@ -439,6 +439,7 @@ textarea, .site-nav__link, .button-primary,
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
+    position: relative;
   }
 }
 
@@ -525,7 +526,7 @@ textarea, .site-nav__link, .button-primary,
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -536,17 +537,21 @@ textarea, .site-nav__link, .button-primary,
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: 250 ms ease-in-out;
-  transition: 250 ms ease-in-out;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 480px) {
+  .menu-container {
+    padding: 48px 40px;
+  }
 }
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-
-.menu-container.navigation__menu-button {
-  position: absolute;
 }
 
 .mobile-menu__list .mobile-menu__link {
