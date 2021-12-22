@@ -563,7 +563,7 @@ textarea, .site-nav__link, .button-primary,
   }
 }
 
-.menu-container.i {
+.menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
