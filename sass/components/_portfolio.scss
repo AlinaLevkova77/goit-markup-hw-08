@@ -1,4 +1,7 @@
 .product {
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
   padding: 94px 0;
 }
 .product__type {
@@ -7,6 +10,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    align-items: baseline;
   }
   @media screen and (min-width: 480px) {
     display: flex;
@@ -22,7 +26,7 @@
   margin-right: 8px;
 }
 .product__item:not(:last-child) {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 }
@@ -84,7 +88,9 @@
 .portfolio__list {
   @include bordered(rgba(238, 238, 238, 1));
 }
-
+.portfolio__list:not(:last-child) {
+  margin-bottom: 30px;
+}
 .portfolio__card {
   position: relative;
   overflow: hidden;

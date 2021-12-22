@@ -62,7 +62,7 @@
                                 </svg>
                                 info@devstudio.com</a></li>
                     </ul>
-                    </div>
+                    
                     <ul class="mobile-menu__social">
                         <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Instagram</a></li>
                         <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Twitter</a>
@@ -72,7 +72,7 @@
                         <li class="mobile-menu__social-item"><a href="" class="mobile-menu__socia-link">Linkedin</a>
                         </li>
                     </ul>
-                    
+                    </div>
             </div>
             </div>
             
@@ -81,8 +81,8 @@
                  <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link" >Портфолио</a></li>
                  <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul> 
-                </div>
             </nav>
+            </div>
           
 
          <ul class="list-contacts ">
@@ -206,12 +206,14 @@
                    <picture>
                        <source srcset="
                        ./images/igor-mob.jpg 1x, 
-                       ./images/igor-mob2x.jpg 2x
+                       ./images/igor-mob2x.jpg 2x"
+                       media="(max-width:767px)" >
+                       <source srcset="
                        ./images/igor-tablet.jpg 1x,
-                       ./images/igor-tablet2x.jpg 2x
-                       ./images/igor-desctop.jpg 1x,
-                       ./images/igor-desctop2x.jpg 2x" />                    
-                      <img src="./images/igor-mob.jpg" 
+                       ./images/igor-tablet2x.jpg 2x"
+                       media="(max-width:1199px)">
+                    
+                      <img src="./images/igor-desktop2x.jpg" 
                       alt="Игорь Демьяненко"
                       width="100%">
                 </picture>
@@ -254,13 +256,15 @@
                <li class="team-sections__box">
                 <picture>
                           <source srcset="
-                                       ./images/olga-mob.jpg 1x, 
-                                       ./images/olga-mob2x.jpg 2x
-                                       ./images/olga-tablet.jpg 1x,
-                                       ./images/olga-tablet2x.jpg 2x
-                                       ./images/olga-desktop.jpg 1x,
-                                       ./images/olga-desktop2x.jpg 2x" />
-                           <img src="./images/olga-mob.jpg" 
+                        ./images/olga-mob.jpg 1x, 
+                        ./images/olga-mob2x.jpg 2x"
+                        media="(max-width:767px)" >
+                        <source srcset="
+                        ./images/olga-tablet.jpg 1x,
+                        ./images/olga-tablet2x.jpg 2x"
+                          media="(max-width:1199px)">
+                        
+                           <img src="./images/olga-desktop2x.jpg" 
                            alt="Ольга Репина"
                             width="100%">
                 </picture>
@@ -304,12 +308,14 @@
                     <picture>
                         <source srcset="
                          ./images/kolya-mob.jpg 1x, 
-                         ./images/kolya-mob2x.jpg 2x
+                         ./images/kolya-mob2x.jpg 2x"
+                         media="(max-width:767px)" >
+                        <source srcset="
                          ./images/kolya-tablet.jpg 1x,
-                         ./images/kolya-tablet2x.jpg 2x
-                         ./images/kolya-desktop.jpg 1x,
-                         ./images/kolya-desktop2x.jpg 2x" />
-                        <img src="./images/kolya-mob.jpg" alt="Николай Тарасов" width="100%">
+                         ./images/kolya-tablet2x.jpg 2x"
+                          media="(max-width:1199px)" >
+                        
+                        <img src="./images/kolya-desktop2x.jpg" alt="Николай Тарасов" width="100%">
                     </picture>
                    
              <div class="team-desc">
@@ -351,12 +357,13 @@
                 <picture>
                     <source srcset="
                      ./images/misha-mob.jpg 1x, 
-                     ./images/misha-mob2x.jpg 2x
+                     ./images/misha-mob2x.jpg 2x"
+                     media="(max-width:767px)" >
+                    <source srcset="
                      ./images/misha-tablet.jpg 1x,
-                     ./images/misha-tablet2x.jpg 2x
-                     ./images/misha-desktop.jpg 1x,
-                     ./images/misha-desktop2x.jpg 2x" />
-                    <img src="./images/misha-mob.jpg" alt="Михаил Ермаков" width="100%">
+                     ./images/misha-tablet2x.jpg 2x"
+                     media="(max-width:1199px)" >
+                    <img src="./images/misha-desktop2x.jpg" alt="Михаил Ермаков" width="100%">
                 </picture>
                   
              <div class="team-desc">
