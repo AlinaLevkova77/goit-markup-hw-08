@@ -1,4 +1,7 @@
 .advantages-sections {
+  @media screen and(max-width:1199px) {
+    padding: 60px 0;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
 }
