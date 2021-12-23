@@ -841,6 +841,7 @@ textarea, .site-nav__link, .button-primary,
 
 @media screen and (max-width: 1199px) {
   .list-contacts__link--link {
+    padding-top: 20px;
     margin-bottom: 10px;
   }
 }
