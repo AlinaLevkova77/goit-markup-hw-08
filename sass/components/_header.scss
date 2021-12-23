@@ -1,4 +1,8 @@
 .header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   @media screen and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -6,10 +10,15 @@
   }
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
+.header > .container {
+  display: -webkit-box;
+}
+
 .main-nav {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    margin-right: auto;
   }
 }
 
@@ -99,7 +108,12 @@
 .menu-toggle__button {
   position: absolute;
   right: 25px;
-  top: 20px;
+  top: 15px;
+}
+.menu-toggle__btn {
+  position: absolute;
+  right: 25px;
+  align-items: center;
 }
 .mobile-menu__list {
   margin-bottom: 300px;
@@ -229,4 +243,11 @@
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
+}
+.list-contacts {
+  @media screen and(max-width:1199px) {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
