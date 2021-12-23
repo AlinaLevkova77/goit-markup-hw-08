@@ -1588,7 +1588,8 @@ textarea, .site-nav__link, .button-primary,
 
 @media screen and (min-width: 1200px) {
   .js-speaker-form {
-    margin-left: 93px;
+    margin-left: 80px;
+    margin-right: 25px;
   }
 }
 
