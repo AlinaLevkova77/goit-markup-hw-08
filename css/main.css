@@ -761,14 +761,6 @@ textarea, .site-nav__link, .button-primary,
   margin-right: 50px;
 }
 
-@media screen and (max-width: 1199px) {
-  .list-contacts {
-    display: inline-block;
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
-
 .current.page {
   font-size: 14px;
   line-height: 1.15;
@@ -790,8 +782,16 @@ textarea, .site-nav__link, .button-primary,
 
 @media screen and (min-width: 768px) {
   .list-contacts {
-    display: inline-block;
+    display: block;
     margin-left: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .list-contacts {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 
@@ -803,7 +803,6 @@ textarea, .site-nav__link, .button-primary,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
   }
 }
 
@@ -841,7 +840,7 @@ textarea, .site-nav__link, .button-primary,
 
 @media screen and (max-width: 1199px) {
   .list-contacts__link--link {
-    padding-top: 20px;
+    padding-top: 0;
     margin-bottom: 10px;
   }
 }
@@ -1320,6 +1319,13 @@ textarea, .site-nav__link, .button-primary,
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-sections__title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .clients-sections__item {

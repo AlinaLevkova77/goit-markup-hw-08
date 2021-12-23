@@ -16,13 +16,17 @@
     display: none;
   }
   @media screen and(min-width:768px) {
-    display: inline-block;
+    display: block;
     margin-left: auto;
+    margin-bottom: auto;
+  }
+  @media screen and(max-width:1199px) {
+    font-size: 12px;
+    line-height: 1.17;
   }
   @media screen and(min-width:1200px) {
     display: flex;
     align-items: center;
-    margin-left: auto;
   }
 }
 
@@ -52,7 +56,7 @@
 
 .list-contacts__link--link {
   @media screen and (max-width: 1199px) {
-    padding-top: 20px;
+    padding-top: 0;
     margin-bottom: 10px;
   }
 }

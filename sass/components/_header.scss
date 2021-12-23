@@ -243,10 +243,3 @@
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.list-contacts {
-  @media screen and(max-width:1199px) {
-    display: inline-block;
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
