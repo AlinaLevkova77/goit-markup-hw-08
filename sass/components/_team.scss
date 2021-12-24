@@ -1,6 +1,11 @@
 .team-sections {
-  padding: 94px 0;
-  background-color: #f5f4fa;
+  @media screen and(min-width:768px) {
+    padding: 60px 0;
+  }
+  @media screen and(min-width:1200px) {
+    padding: 94px 0;
+    background-color: #f5f4fa;
+  }
 
   &__title {
     @media screen and (min-width: 1200px) {
@@ -24,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .team-sections__list .team-sections__box:not(:last-child) {
     margin-bottom: 30px;
   }
