@@ -37,14 +37,14 @@ img {
   cursor: pointer;
 }
 .container {
-  width: 100%;
+  min-width: 200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   align-items: baseline;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: 450px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -57,4 +57,7 @@ input,
 textarea {
   outline: 0;
   @extend %transition;
+}
+button {
+  text-transform: none;
 }

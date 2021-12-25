@@ -17,8 +17,8 @@
 </head>
 <body >
 
-     <!-- Шапка сайта -->
-    <header class="header">
+       <!-- Шапка сайта  -->
+     <header class="header">
     <div class="container">
         <div class="main-nav">
          <nav class="nav-container" >
@@ -27,21 +27,23 @@
              </a>
             <button type="button" class="menu-toggle menu-toggle__btn js-open-menu"
               aria-expanded="false"
-              aria-controls="mobile-menu">
+              aria-controls="mobile-menu"
+              >
 
-                <svg 
+                <svg сlass="icon-menu" 
                 width="40"
                 height="40" 
                 aria-label="Переключатель мобильного меню" 
                 >
-                <use сlass="icon-menu" href="./images/icons.svg#menu"></use>
+                <use href="./images/icons.svg#menu"></use>
                 </svg>
                 </button>
                 
                 <div  class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle  menu-toggle__button  js-close-menu">
-                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use сlass="icon-cross" href="./images/icons.svg#cross"></use>
+                    <button type="button" class="menu-toggle  menu-toggle__button  js-close-menu" mobile-button__open
+                    aria-controls="menu-container">
+                    <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use  href="./images/icons.svg#cross"></use>
                     </svg>
                     </button>
                 
@@ -54,7 +56,7 @@
                     <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
                 </ul>
                 
-                <div class="mobile-info">
+                
                     <ul class="mobile-menu__contacts">
                         <li><a href="tel:+380961111111" class="mobile-menu__tel">
                                 +38 096 111 11 11</a>
@@ -82,12 +84,11 @@
                  <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link" >Портфолио</a></li>
                  <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul> 
-            
-        </nav>
+                </nav>
             </div>
-            
+           
           
-        <!-- <div class="list-info"> -->
+        
          <ul class="list-contacts ">
         <li class="list-contacts__item" ><a href="mailto:info@devstudio.com" class="list-contacts__link list-contacts__link--link">
              <svg class="list-contacts__icon list-contacts__icon--envelope">
@@ -104,11 +105,13 @@
             </a>
         </li>
         </ul>
-        <!-- </div> -->
+        
         
     </div>
     </div>
 </header>
+ 
+
      <main>
 
          <!-- Герой -->
@@ -609,8 +612,6 @@
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
 <script defer src="js/mobile-menu.js"></script>
-</body>
 
-</html>
 </body>
 </html>

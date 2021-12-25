@@ -12,4 +12,13 @@
   &__text {
     color: $title-text-color;
   }
+
+  @media screen and(min-width:768px) {
+    padding: 26px 0;
+    margin-right: 76px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 100px;
+  }
 }

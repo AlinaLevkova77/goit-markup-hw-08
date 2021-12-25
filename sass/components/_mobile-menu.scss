@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -11,10 +12,17 @@
   border: none;
   border-radius: 50%;
   outline: none;
+}
 
-  @media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  //   background-color: rgba(0, 0, 0, 0.1);
+  fill: #2196f3;
 }
 .menu-toggle.icon-cross {
   display: none;
@@ -34,16 +42,12 @@
   height: 100vh;
   padding: 20px 40px;
   background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+  //   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+  //     0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 999;
   transform: translateX(100%);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease-in-out;
 
   @media screen and (min-width: 480px) {
     padding: 48px 40px;
@@ -56,12 +60,12 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: #2196f3;
-}
-.menu-toggle.js-close-menu {
-  pointer-events: none;
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
 }
 .menu-toggle__button {
   position: absolute;
@@ -93,9 +97,6 @@
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .mobile-menu__list .mobile-menu__link {
-  display: flex;
-  padding: 0;
-  margin: 0;
   list-style: none;
 
   @media (max-width: 767px) {
@@ -107,8 +108,13 @@
 .icon-cross {
   left: 0;
   bottom: 0;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
+
 .mobile-menu__link {
+  display: block;
   color: #000000;
   text-decoration: none;
   font-style: 400;
