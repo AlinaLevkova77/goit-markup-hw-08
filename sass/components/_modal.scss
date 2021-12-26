@@ -7,6 +7,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
   @extend %transition;
+  z-index: 1;
+  opacity: 1;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -27,7 +29,7 @@
     min-width: 528px;
     min-height: 581px;
   }
-  position: fixed;
+  position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;

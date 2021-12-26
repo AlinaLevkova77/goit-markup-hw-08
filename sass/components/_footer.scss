@@ -11,6 +11,9 @@
 .footer > .container {
   @media screen and (min-width: 1200px) {
     display: -webkit-box;
+    align-items: baseline;
+    -webkit-box-align: baseline;
+    width: 1200px;
   }
 }
 .footer__left {
@@ -125,7 +128,7 @@
 }
 
 .js-speaker-form input {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     width: 100%;
   }
   @media screen and (min-width: 768px) {
