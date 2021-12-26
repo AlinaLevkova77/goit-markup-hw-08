@@ -2,19 +2,21 @@
   @media screen and (max-width: 1199px) {
     padding: 60px 0;
   }
-  padding: 94px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .product__type {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
     align-items: baseline;
-  }
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 .product__type {
