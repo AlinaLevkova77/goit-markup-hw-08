@@ -15,7 +15,7 @@
 %transition-modal {
   transition-property: opasity, transition-duration, transition-timing-function;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 }
 
 %icons {
@@ -42,7 +42,7 @@
   -webkit-box-align: center;
   transition-property: opacity, transform, -webkit-transform;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
 }
 %card-set {
   font-weight: 700;

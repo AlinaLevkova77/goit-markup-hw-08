@@ -1,5 +1,6 @@
 .team-sections {
   padding: 60px 0;
+  background-color: #f5f4fa;
   @media screen and(min-width:1200px) {
     padding: 94px 0;
     background-color: #f5f4fa;
@@ -43,26 +44,22 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin: -15px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin: -15px;
   }
 }
 .team-sections__list > .team-sections__box {
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 15px;
   }
 }
 .team-desc {

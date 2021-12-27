@@ -65,6 +65,7 @@
 .list-contacts__link--email {
   @media screen and(max-width:419px) {
     font-size: 6vw;
+    color: rgba(117, 117, 117, 1);
   }
   @media screen and(min-width:420px) and (max-width: 767px) {
     font-size: 24px;
@@ -73,7 +74,7 @@
     letter-spacing: 0.02em;
     color: rgba(117, 117, 117, 1);
   }
-  @media screen and(min-width:787px) {
+  @media screen and(min-width:480px) {
     padding: 0;
     padding-top: 20px;
     margin-bottom: 10px;

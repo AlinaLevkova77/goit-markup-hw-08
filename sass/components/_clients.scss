@@ -32,15 +32,15 @@
   }
 }
 .clients-sections__title {
-  @media screen and(max-width:1199px) {
-    font-size: 28px;
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
     line-height: 1.17;
     margin: 0 0 50px 0;
   }
   text-align: center;
   margin: 0 0 30px 0;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
@@ -55,22 +55,19 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin: -15px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin: -15px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin: -15px;
   }
 }
 .clients-sections__item:not(:last-child) {
@@ -81,18 +78,15 @@
 .clients-sections__list > .clients-sections__item {
   @media screen and (min-width: 480px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 15px;
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 6 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 15px;
   }
 }
 .clients-sections__link {
